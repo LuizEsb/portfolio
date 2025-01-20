@@ -4,8 +4,8 @@ Este projeto contém uma apresentação, informações pessoais/profissionais e 
 
 ### Ferramentas utilizadas:
 
-*HTML
-*CSS
+* HTML
+* CSS
 
 ## Feito por:
 
