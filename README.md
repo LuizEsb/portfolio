@@ -2,7 +2,7 @@
 
 Este projeto contém uma apresentação, informações pessoais/profissionais e o meu curriculum vitae.
 
-###Ferramentas utilizadas:
+### Ferramentas utilizadas:
 
 *HTML
 *CSS
