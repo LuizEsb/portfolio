@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <div>
+    <main>
       <h1>sobre eu</h1>
-    </div>
+    </main>
   );
 }

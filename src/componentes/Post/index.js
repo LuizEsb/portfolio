@@ -10,6 +10,8 @@ export default function Post({ post }) {
       />
 
       <h2 className={styles.titulo}>{post.titulo}</h2>
+
+      <button className={styles.botaoLer}>Conferir</button>
     </div>
   );
 }

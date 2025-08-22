@@ -11,7 +11,7 @@ export default function Banner() {
         <p className={styles.paragrafo}>
           Boas vindas ao meu portfólio! <br/> Eu sou{" "}
           <strong>Luiz Felipe Esboldrim</strong>, estudante universitário e
-          Desenvolvedor Web. Fique à vontade!
+          Desenvolvedor Web.<br/> Fique à vontade e veja alguns de meus projetos!
         </p>
       </div>
 
