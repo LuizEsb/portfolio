@@ -3,7 +3,6 @@ import styles from "./MenuLink.module.css";
 
 export default function MenuLink({ children, to }) {
   const localizacao = useLocation();
-  console.log(localizacao)
   return (
     <Link
       className={`

@@ -1,17 +1,20 @@
+import { Link } from "react-router-dom";
 import styles from "./PostCard.module.css";
 
 export default function PostCard({ post }) {
   return (
-    <div className={styles.post}>
-      <img
-        className={styles.capa}
-        src={`/assets/posts/${post.id}/capa.png`}
-        alt="post capa"
-      />
+    <Link to={`/posts/${post.id}`}>
+      <div className={styles.post}>
+        <img
+          className={styles.capa}
+          src={`/assets/posts/${post.id}/capa.png`}
+          alt="post capa"
+        />
 
-      <h2 className={styles.titulo}>{post.titulo}</h2>
+        <h2 className={styles.titulo}>{post.titulo}</h2>
 
-      <button className={styles.botaoLer}>Conferir</button>
-    </div>
+        <button className={styles.botaoLer}>Conferir</button>
+      </div>
+    </Link>
   );
 }
