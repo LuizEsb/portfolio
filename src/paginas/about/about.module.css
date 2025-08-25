@@ -1,0 +1,72 @@
+.fotoSobreMim {
+    margin-bottom: .5rem;
+    margin-left: 1.5rem;
+    width: 40vw;
+    float: right;
+}
+
+.subtitulo {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.skillsSubt{
+    margin-bottom: 0;
+}
+
+.paragrafo {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.paragrafo li a:hover{
+    color: var(--azul-medio);
+}
+
+@media (max-width: 1100px) {
+    .subtitulo {
+    margin-bottom: .5rem;
+    }
+
+    .skillsSubt{
+    margin-bottom: 0;
+}
+
+    .fotoSobreMim {
+        float: none;
+        display: block;
+        margin: 0 auto 2rem;
+        width: 70vw;
+    }
+
+    .skillsFoto {
+        margin-bottom: 0;
+    }
+
+    .paragrafo {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 744px) {
+    .fotoSobreMim {
+        width: 100%;
+    }
+
+    .skillsFoto {
+        margin-bottom: 1em;
+    }
+
+    .subtitulo {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .paragrafo {
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+}
