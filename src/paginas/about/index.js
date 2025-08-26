@@ -2,6 +2,7 @@ import PostModelo from "componentes/PostModelo";
 import fotoCapa from "assets/sobre_mim_capa.png";
 import styles from "./about.module.css";
 import fotoReactNode from "assets/reactnodejslogo.png";
+import fotoFerramentas from "assets/gitgithubvscwin.png";
 import React from "react";
 
 export default function About() {
@@ -18,16 +19,26 @@ export default function About() {
           alt="foto sobre mim"
         />
 
+        <ul className={styles.paragrafo}>
+          <li>React.js,</li>
+
+          <li>Node.js,</li>
+          
+          <li>JavaScript,</li>
+          
+          <li>HTML5 e CSS3,</li>
+
+          <li>SQL.</li>
+        </ul>
+
         <p className={styles.paragrafo}>
-          React.js, Node.js, JavaScript, HTML5, CSS3, SQL
+           
         </p>
 
         <h3 className={`${styles.subtitulo} ${styles.skillsSubt}`}>Formação</h3>
 
         <ul className={styles.paragrafo}>
-          <li>
-            Bachcarelado em Sistemas de Informação - UNESP | (2025 - 2028)
-          </li>
+          <li>Bacharelado em Sistemas de Informação - UNESP | (2025 - 2028)</li>
 
           <li>Técnico em Administração - ETEC | (2022 - 2024)</li>
         </ul>
@@ -80,16 +91,22 @@ export default function About() {
           Ferramentas
         </h3>
 
+        <img
+          src={fotoFerramentas}
+          className={`${styles.fotoSobreMim} ${styles.skillsFoto}`}
+          alt="foto sobre mim"
+        />
+
         <ul className={styles.paragrafo}>
-          <li>Git</li>
+          <li>Git,</li>
 
-          <li>Github</li>
+          <li>Github,</li>
 
-          <li>Visual Studio Code</li>
+          <li>Visual Studio Code,</li>
 
-          <li>Windows</li>
+          <li>Windows,</li>
 
-          <li>Microsoft Office</li>
+          <li>Microsoft Office.</li>
         </ul>
 
         <p className={styles.paragrafo}></p>
@@ -120,7 +137,7 @@ export default function About() {
           Simbolus Sistemas de Informação e aprimorei minhas habilidades como
           desenvolvedor. Desde então, aprendi a utilizar diversas ferramentas e
           tecnologias, principalmente voltadas ao front-end, mas almejo me
-          tornar um desenvolvedor Full Stack
+          tornar um desenvolvedor Full Stack!
         </p>
       </PostModelo>
     </>
