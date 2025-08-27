@@ -1,13 +1,24 @@
 .navegacao {
   height: 90px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   column-gap: 3rem;
+}
+
+.navegacao__opcoes {
+  display: flex;
+  gap: 3em;
+  margin-left: 3em;
 }
 
 @media (max-width: 744px) {
   .navegacao {
     height: 72px;
+  }
+
+  .navegacao__opcoes {
+    gap: 2em;
+    margin-left: 2em;
   }
 }
