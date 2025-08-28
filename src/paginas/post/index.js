@@ -32,6 +32,7 @@ export default function Post() {
           index
           element={
             <PostModelo
+              escuro
               fotoCapa={`/assets/posts/${post.id}/capa.png`}
               titulo={post.titulo}
             >
@@ -46,7 +47,7 @@ export default function Post() {
               <ul className={styles.postsRecomendados}>
                 {postsRecomendados.map((post) => (
                   <li key={post.id}>
-                    <PostCard post={post} />
+                    <PostCard escuro post={post} />
                   </li>
                 ))}
               </ul>

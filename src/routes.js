@@ -12,11 +12,11 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Menu />
+      <Menu escuro />
 
       <Routes>
         <Route path="/" element={<PaginaPadrao />}>
-          <Route index element={<Inicio />} />
+          <Route index element={<Inicio escuro />} />
           <Route path="about" element={<About />} />
         </Route>
 

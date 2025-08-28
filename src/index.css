@@ -20,9 +20,13 @@ code {
 
 :root {
   --azul-escuro: #041833;
+  --azul-escuro-fundo: #0F172A;
+  --cinza-azulado: #1E293B;
   --azul-medio: #1875E8;
+  --amarelo: #FACC15;
   --cor-fonte-principal: #041833;
   --cor-fonte-post: #444444;
+  --branco-suave: #F1F5F9;
   --branco: #FFF;
   --fonte-principal: 'Raleway', sans-serif;
   --fonte-secundaria: 'Playfair Display', sans-serif;

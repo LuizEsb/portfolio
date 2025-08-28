@@ -6,6 +6,11 @@
   column-gap: 3rem;
 }
 
+.escuro {
+  background-color: var(--azul-escuro-fundo);
+  color: var(--amarelo);
+}
+
 .navegacao__opcoes {
   display: flex;
   gap: 3em;

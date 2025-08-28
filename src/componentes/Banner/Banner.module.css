@@ -5,6 +5,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.escuro {
+    color: var(--branco-suave);
+}
  
 .titulo {
     font-family: var(--fonte-secundaria);
@@ -18,6 +22,7 @@
     font-size: 1.5rem;
     line-height: 2rem;
     margin-bottom: 2rem;
+    color: var(--branco-suave);
 }
  
 .imagens {

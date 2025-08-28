@@ -5,7 +5,11 @@
 }
 
 .linkDestacado {
-    text-decoration: underline;
+    text-decoration: underline var(--amarelo);
+}
+
+.escuro {
+  color: var(--amarelo);
 }
 
 @media (max-width: 744px) {

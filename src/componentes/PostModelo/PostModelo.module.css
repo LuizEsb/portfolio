@@ -3,6 +3,8 @@
     position: relative;
 }
 
+
+
 .fotoCapa,
 .titulo {
     height: 204px;
@@ -28,6 +30,11 @@
 
 .postConteudoContainer {
     padding: 2.5rem 7rem 4.5rem;
+}
+
+.escuro {
+    background-color: var(--cinza-azulado);
+    color: var(--branco-suave);
 }
 
 @media (max-width: 1100px) {

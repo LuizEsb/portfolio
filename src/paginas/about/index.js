@@ -1,14 +1,14 @@
 import PostModelo from "componentes/PostModelo";
 import fotoCapa from "assets/sobre_mim_capa.png";
 import styles from "./about.module.css";
-import fotoReactNode from "assets/reactnodejslogo.png";
+import fotoReactNode from "assets/skills.png";
 import fotoFerramentas from "assets/gitgithubvscwin.png";
 import React from "react";
 
 export default function About() {
   return (
     <>
-      <PostModelo fotoCapa={fotoCapa} titulo="Sobre mim">
+      <PostModelo escuro fotoCapa={fotoCapa} titulo="Sobre mim">
         <h3 className={`${styles.subtitulo} ${styles.skillsSubt}`}>
           Principais Habilidades
         </h3>
@@ -111,7 +111,7 @@ export default function About() {
 
         <p className={styles.paragrafo}></p>
       </PostModelo>
-      <PostModelo fotoCapa={fotoCapa} titulo="Minha história">
+      <PostModelo escuro fotoCapa={fotoCapa} titulo="Minha história">
         <h3 className={styles.subtitulo}>Olá, eu sou o Luiz!</h3>
 
         <p className={styles.paragrafo}>
