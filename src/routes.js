@@ -6,10 +6,12 @@ import Footer from "componentes/Footer";
 import PaginaPadrao from "componentes/PaginaPadrao";
 import Post from "paginas/post";
 import NaoEncontrada from "paginas/naoEncontrada";
+import ScrollToTop from "componentes/ScrollToTop";
 
 function AppRoutes() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Menu />
 
       <Routes>

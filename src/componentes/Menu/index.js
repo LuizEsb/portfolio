@@ -63,6 +63,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 }));
 
 export default function Menu() {
+  
   return (
     <header>
       <nav className={styles.navegacao}>
