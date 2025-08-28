@@ -6,9 +6,17 @@
     font-family: var(--fonte-secundaria);
 }
 
-.post-markdown-container h3 {
-    margin-bottom: 2rem;
+.post-markdown-container h1 {
     font-size: 2.5rem;
+}
+
+.post-markdown-container h2 {
+    font-size: 2rem;
+}
+
+.post-markdown-container h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .post-markdown-container h4 {
@@ -48,7 +56,8 @@
 .post-markdown-container blockquote {
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background-color: #eaeaea;
+    background-color: var(--cor-fonte-post);
+    color: var(--branco-suave);
     border-radius: 5px;
 }
 

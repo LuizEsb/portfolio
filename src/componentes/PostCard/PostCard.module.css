@@ -12,6 +12,10 @@
     background-color: var(--cinza-azulado);
 }
 
+.escuro h2 {
+    color: var(--branco-suave);
+}
+
 .post:hover {
     transform: translate(0, -1rem);
 }
@@ -23,7 +27,7 @@
 .titulo {
     font-family: var(--fonte-secundaria);
     font-size: 1.25rem;
-    color: var(--branco-suave);
+    color: var(--cor-fonte-principal);
     line-height: 1.75rem;
     margin: 1.5rem 0 1.75rem;
 }

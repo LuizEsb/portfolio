@@ -8,6 +8,7 @@
 
 .escuro {
     color: var(--branco-suave);
+    background-color: var(--cinza-azulado);
 }
  
 .titulo {

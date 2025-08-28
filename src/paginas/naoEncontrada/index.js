@@ -3,7 +3,7 @@ import styles from "./NaoEncontrada.module.css";
 import erro404 from "assets/erro_404.png";
 import { useNavigate } from "react-router-dom";
 
-export default function NaoEncontrada() {
+export default function NaoEncontrada({ escuro }) {
     const navegar = useNavigate()
   return (
     <>
@@ -22,7 +22,7 @@ export default function NaoEncontrada() {
 
         <div className={styles.botaoContainer}
         onClick={() => navegar(-1)}>
-          <BotaoPrincipal tamanho="lg">Voltar</BotaoPrincipal>
+          <BotaoPrincipal escuro={escuro} tamanho="lg">Voltar</BotaoPrincipal>
         </div>
 
         <img

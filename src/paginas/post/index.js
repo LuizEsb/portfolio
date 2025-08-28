@@ -9,7 +9,7 @@ import NaoEncontrada from "paginas/naoEncontrada";
 import PaginaPadrao from "componentes/PaginaPadrao";
 import PostCard from "componentes/PostCard";
 
-export default function Post() {
+export default function Post({ escuro }) {
   const parametros = useParams();
 
   const post = posts.find((post) => {
@@ -17,7 +17,7 @@ export default function Post() {
   });
 
   if (!post) {
-    return <NaoEncontrada />;
+    return <NaoEncontrada escuro={escuro} />;
   }
 
   const postsRecomendados = posts
@@ -27,27 +27,30 @@ export default function Post() {
 
   return (
     <Routes>
-      <Route path="*" element={<PaginaPadrao />}>
+      <Route path="*" element={<PaginaPadrao escuro={escuro} />}>
         <Route
           index
           element={
             <PostModelo
-              escuro
+              escuro={escuro}
               fotoCapa={`/assets/posts/${post.id}/capa.png`}
               titulo={post.titulo}
             >
               <div className="post-markdown-container">
                 <ReactMarkdown>{post.texto}</ReactMarkdown>
               </div>
-
-              <h2 className={styles.tituloOutrosPosts}>
+              <h2
+                className={`${styles.tituloOutrosPosts} ${
+                  escuro ? styles.escuro : ""
+                }`}
+              >
                 Outros posts que você pode gostar:
               </h2>
 
               <ul className={styles.postsRecomendados}>
                 {postsRecomendados.map((post) => (
                   <li key={post.id}>
-                    <PostCard escuro post={post} />
+                    <PostCard escuro={escuro} post={post} />
                   </li>
                 ))}
               </ul>

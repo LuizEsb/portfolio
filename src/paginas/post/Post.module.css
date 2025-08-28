@@ -6,6 +6,10 @@
     padding-bottom: 2rem;
 }
 
+.escuro {
+    color: var(--amarelo);
+}
+
 .postsRecomendados {
     display: flex;
     gap: 1.5rem;

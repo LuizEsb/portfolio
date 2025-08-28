@@ -62,21 +62,21 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 
-export default function Menu({ escuro }) {
+export default function Menu({ escuro, mudaTema }) {
   
   return (
     <header>
       <nav className={`${styles.navegacao} ${escuro ? styles.escuro : ""}`}>
         <div className={styles.navegacao__opcoes}>
-          <MenuLink escuro to="/">Início</MenuLink>
-          <MenuLink escuro to="/about">Sobre mim</MenuLink>
+          <MenuLink escuro={escuro} to="/">Início</MenuLink>
+          <MenuLink escuro={escuro} to="/about">Sobre mim</MenuLink>
         </div>
         <div>
           <FormGroup>
             <FormControlLabel
-              control={<MaterialUISwitch sx={{ m: 1 }} />}
+              control={<MaterialUISwitch  sx={{ m: 1 }} />}
               label=""
-              onChange={() => console.log("teste switch")}
+              onChange={mudaTema}
             />
           </FormGroup>
         </div>

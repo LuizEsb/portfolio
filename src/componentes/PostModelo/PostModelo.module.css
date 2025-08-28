@@ -33,7 +33,7 @@
 }
 
 .escuro {
-    background-color: var(--cinza-azulado);
+    background-color: var(--azul-escuro-fundo);
     color: var(--branco-suave);
 }
 

@@ -9,7 +9,7 @@ export default function Inicio({ escuro }) {
       <ul className={`${styles.posts} ${escuro ? styles.escuro : ""}`}>
         {posts.map((post) => (
           <li key={post.id}>
-            <PostCard escuro post={post} />
+            <PostCard escuro={escuro} post={post} />
           </li>
         ))}
       </ul>

@@ -14,7 +14,7 @@ export default function PostCard({ post, escuro }) {
 
         <h2 className={styles.titulo}>{post.titulo}</h2>
 
-        <BotaoPrincipal escuro>Conferir</BotaoPrincipal>
+        <BotaoPrincipal escuro={escuro}>Conferir</BotaoPrincipal>
       </div>
     </Link>
   );
