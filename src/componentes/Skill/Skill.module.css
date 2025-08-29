@@ -1,27 +1,37 @@
 .skill {
-    display: flex;
-    flex-wrap: nowrap; 
-    align-items: center;
-    padding: 0.5em;
-    background-color: var(--branco);
-    font-weight: 800;
-    border-radius: 10px;
-    gap: 0.75em;
-    min-height: 60px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0.5em;
+  background-color: var(--branco);
+  font-weight: 800;
+  border-radius: 10px;
+  gap: 0.75em;
+  min-height: 60px;
 }
 
 .skill:hover {
-    transform: translate(0, -1rem);
+  transform: translate(0, -1rem);
 }
 
 .skill img {
-    width: 3em;
+  width: 3em;
 }
 
 .skill p {
-    font-family: var(--fonte-secundaria);
+  font-family: var(--fonte-secundaria);
 }
 
 .escuro {
-    background-color: var(--azul-escuro-fundo);
+  background-color: var(--azul-escuro-fundo);
+}
+
+@media (max-width: 744px) {
+  .skill img {
+    width: 2em;
+  }
+
+  .skill {
+    min-height: 40px;
+  }
 }

@@ -1,6 +1,5 @@
 import PostModelo from "componentes/PostModelo";
 import fotoCapa from "assets/sobre_mim_capa.png";
-import fotoFerramentas from "assets/gitgithubvscwin.png";
 import Skill from "componentes/Skill";
 import reactIcon from "assets/react-icon.png";
 import nodeIcon from "assets/node-icon.png";
@@ -10,9 +9,10 @@ import vsCodeIcon from "assets/vscode-icon.png";
 import winIcon from "assets/windows-icon.png";
 import sqlIcon from "assets/sql-icon.png";
 import officeIcon from "assets/ofiice-icon.png";
-import sqliteIcon from "assets/sqlite-icon.png"
-import firebirdIcon from "assets/firebird-icon.png"
-import delphiIcon from "assets/delphi-icon.png"
+import sqliteIcon from "assets/sqlite-icon.png";
+import firebirdIcon from "assets/firebird-icon.png";
+import delphiIcon from "assets/delphi-icon.png";
+import cIcon from "assets/c-icon.png";
 
 import styles from "./about.module.css";
 import React from "react";
@@ -23,9 +23,7 @@ export default function About({ escuro }) {
       <PostModelo escuro={escuro} fotoCapa={fotoCapa} titulo="Sobre mim">
         <section className={styles.curriculum}>
           <div className={`${styles.card} ${escuro ? styles.escuro : ""}`}>
-            <h3 className={`${styles.subtitulo} ${styles.skillsSubt}`}>
-              Principais Habilidades
-            </h3>
+            <h3 className={`${styles.subtitulo}`}>Principais Habilidades</h3>
 
             <div className={styles.skills}>
               <Skill
@@ -69,9 +67,7 @@ export default function About({ escuro }) {
           </div>
 
           <div className={`${styles.card} ${escuro ? styles.escuro : ""}`}>
-            <h3 className={`${styles.subtitulo} ${styles.skillsSubt}`}>
-              Outros Conhecimentos
-            </h3>
+            <h3 className={`${styles.subtitulo}`}>Outros Conhecimentos</h3>
 
             <div className={styles.skills}>
               <Skill
@@ -92,7 +88,7 @@ export default function About({ escuro }) {
                 srcIcon={sqliteIcon}
                 alt="icone sqlite"
               />
-              <Skill escuro={escuro} nome="C" srcIcon={winIcon} alt="icone C" />
+              <Skill escuro={escuro} nome="C" srcIcon={cIcon} alt="icone C" />
               <Skill
                 escuro={escuro}
                 nome="Office"
@@ -103,9 +99,7 @@ export default function About({ escuro }) {
           </div>
 
           <div className={`${styles.card} ${escuro ? styles.escuro : ""}`}>
-            <h3 className={`${styles.subtitulo} ${styles.skillsSubt}`}>
-              Formação
-            </h3>
+            <h3 className={`${styles.subtitulo}`}>Formação</h3>
 
             <ul className={styles.paragrafo}>
               <li>
@@ -114,10 +108,10 @@ export default function About({ escuro }) {
 
               <li>Técnico em Administração - ETEC | (2022 - 2024)</li>
             </ul>
+          </div>
 
-            <h3 className={`${styles.subtitulo} ${styles.skillsSubt}`}>
-              Formações Complementares
-            </h3>
+          <div className={`${styles.card} ${escuro ? styles.escuro : ""}`}>
+            <h3 className={`${styles.subtitulo}`}>Formações Complementares</h3>
 
             <ul className={styles.paragrafo}>
               <li>
@@ -154,35 +148,38 @@ export default function About({ escuro }) {
         </section>
       </PostModelo>
       <PostModelo escuro={escuro} fotoCapa={fotoCapa} titulo="Minha história">
-        <div className={`${styles.card} ${escuro ? styles.escuro : ""}`}>
-          <h3 className={styles.subtitulo}>Olá, eu sou o Luiz!</h3>
+        <section className={styles.historia}>
+          <div className={`${styles.card} ${escuro ? styles.escuro : ""}`}>
+            <h3 className={styles.subtitulo}>Olá, eu sou o Luiz!</h3>
 
-          <p className={styles.paragrafo}>
-            Sou Desenvolvedor de Software e fico feliz que tenha se interessado!
-          </p>
-          <p className={styles.paragrafo}>
-            Comecei a programar no ensino médio. No finalzinho do curso técnico
-            de Administração a necessidade de escolher um caminho pra trilhar e
-            o interesse por tecnologia despertaram em mim a vontade de ser
-            desenvolvedor. Me matriculei em uma escola online de tecnologia, a
-            Alura, e busquei me aprimorar constantemente.
-          </p>
-          <p className={styles.paragrafo}>
-            Com muito esforço e uma grande jornada de meditação nas aulas de
-            boxe, eu consegui passar em Sistemas de Informação na UNESP, uma das
-            melhores faculdades da América Latina e múltiplas vezes indicada
-            como a segunda melhor universidade do Brasil, segundo o Academic
-            Ranking of World Universities, publicado por uma consultoria chinesa
-            especializada em ensino superior.
-          </p>
-          <p className={styles.paragrafo}>
-            Também encontrei meu primeiro estágio com suporte de ERPs em Delphi
-            na Simbolus Sistemas de Informação e aprimorei minhas habilidades
-            como desenvolvedor. Desde então, aprendi a utilizar diversas
-            ferramentas e tecnologias, principalmente voltadas ao front-end, mas
-            almejo me tornar um desenvolvedor Full Stack!
-          </p>
-        </div>
+            <p className={styles.paragrafo}>
+              Sou Desenvolvedor de Software e fico feliz que tenha se
+              interessado!
+            </p>
+            <p className={styles.paragrafo}>
+              Comecei a programar no ensino médio. No finalzinho do curso
+              técnico de Administração a necessidade de escolher um caminho pra
+              trilhar e o interesse por tecnologia despertaram em mim a vontade
+              de ser desenvolvedor. Me matriculei em uma escola online de
+              tecnologia, a Alura, e busquei me aprimorar constantemente.
+            </p>
+            <p className={styles.paragrafo}>
+              Com muito esforço e uma grande jornada de meditação nas aulas de
+              boxe, eu consegui passar em Sistemas de Informação na UNESP, uma
+              das melhores faculdades da América Latina e múltiplas vezes
+              indicada como a segunda melhor universidade do Brasil, segundo o
+              Academic Ranking of World Universities, publicado por uma
+              consultoria chinesa especializada em ensino superior.
+            </p>
+            <p className={styles.paragrafo}>
+              Também encontrei meu primeiro estágio com suporte de ERPs em
+              Delphi na Simbolus Sistemas de Informação e aprimorei minhas
+              habilidades como desenvolvedor. Desde então, aprendi a utilizar
+              diversas ferramentas e tecnologias, principalmente voltadas ao
+              front-end, mas almejo me tornar um desenvolvedor Full Stack!
+            </p>
+          </div>
+        </section>
       </PostModelo>
     </>
   );

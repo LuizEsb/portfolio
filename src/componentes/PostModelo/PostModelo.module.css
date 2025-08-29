@@ -3,8 +3,6 @@
     position: relative;
 }
 
-
-
 .fotoCapa,
 .titulo {
     height: 204px;
@@ -30,6 +28,7 @@
 
 .postConteudoContainer {
     padding: 2.5rem 7rem 4.5rem;
+    justify-content: center;
 }
 
 .escuro {
