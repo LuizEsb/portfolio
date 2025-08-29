@@ -1,3 +1,21 @@
+.curriculum {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    padding: 1em;
+    margin-bottom: 1.5em;
+    border-radius: 20px;
+    background-color: var(--branco-suave);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.escuro {
+    background-color: var(--cinza-azulado);
+}
+
 .fotoSobreMim {
     margin-bottom: .5rem;
     margin-left: 1.5rem;
@@ -6,12 +24,9 @@
 }
 
 .subtitulo {
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
-}
-
-.skillsSubt{
-    margin-bottom: 0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 2.8rem;
 }
 
 .paragrafo {
@@ -23,6 +38,17 @@
 
 .paragrafo li a:hover{
     color: var(--azul-medio);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.curriculum .card {
+    max-width: 40vw;
 }
 
 @media (max-width: 1100px) {

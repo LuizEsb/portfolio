@@ -1,6 +1,6 @@
 import styles from "./Banner.module.css";
-import circuloColorido from "assets/circulo_colorido.png";
 import minhaFoto from "assets/minha_foto.png";
+import ImgAnimada from "componentes/ImgAnimada";
 
 export default function Banner({ escuro }) {
   return (
@@ -17,13 +17,15 @@ export default function Banner({ escuro }) {
       </div>
 
       <div className={styles.imagens}>
-        <img
-          className={styles.circuloColorido}
-          src={circuloColorido}
-          alt="circulo colorido"
-          aria-hidden={true}
+        <ImgAnimada
+          src={minhaFoto}
+          alt={"minha foto"}
+          style={{
+            right: 40,
+            bottom: 0,
+            borderRadius: "50%",
+          }}
         />
-        <img alt="minha foto" src={minhaFoto} className={styles.minhaFoto} />
       </div>
     </section>
   );
