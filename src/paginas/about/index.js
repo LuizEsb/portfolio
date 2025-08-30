@@ -23,7 +23,7 @@ export default function About({ escuro }) {
       <PostModelo escuro={escuro} fotoCapa={fotoCapa} titulo="Sobre mim">
         <section className={styles.curriculum}>
           <div className={`${styles.card} ${escuro ? styles.escuro : ""}`}>
-            <h3 className={`${styles.subtitulo}`}>Principais Habilidades</h3>
+            <h3 className={`${styles.subtitulo}`}>Principais Tecnologias</h3>
 
             <div className={styles.skills}>
               <Skill
@@ -99,14 +99,20 @@ export default function About({ escuro }) {
           </div>
 
           <div className={`${styles.card} ${escuro ? styles.escuro : ""}`}>
-            <h3 className={`${styles.subtitulo}`}>Formação</h3>
+            <h3 className={`${styles.subtitulo}`}>Formação Acadêmica</h3>
 
             <ul className={styles.paragrafo}>
               <li>
-                Bacharelado em Sistemas de Informação - UNESP | (2025 - 2028)
+                <p>
+                  Bacharelado em Sistemas de Informação - UNESP (2025 - 2028)
+                </p>
               </li>
 
-              <li>Técnico em Administração - ETEC | (2022 - 2024)</li>
+              <li>
+                  <p>
+                    Técnico em Administração - ETEC (2022 - 2024)
+                  </p>
+                </li>
             </ul>
           </div>
 

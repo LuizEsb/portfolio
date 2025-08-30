@@ -5,9 +5,9 @@
 }
 
 .historia {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -23,13 +23,6 @@
   background-color: var(--cinza-azulado);
 }
 
-.fotoSobreMim {
-  margin-bottom: 0.5rem;
-  margin-left: 1.5rem;
-  width: 40vw;
-  float: right;
-}
-
 .subtitulo {
   margin-bottom: 1rem;
   font-size: 2rem;
@@ -43,7 +36,7 @@
   margin-bottom: 1.5rem;
 }
 
-.paragrafo li a:hover {
+.paragrafo li:hover {
   color: var(--azul-medio);
 }
 
@@ -59,18 +52,8 @@
 }
 
 @media (max-width: 1200px) {
-  .curriculum {
-    align-items: center;
-  }
   .subtitulo {
     margin-bottom: 1rem;
-  }
-
-  .fotoSobreMim {
-    float: none;
-    display: block;
-    margin: 0 auto 2rem;
-    width: 70vw;
   }
 
   .skillsFoto {
@@ -98,10 +81,6 @@
 
   .card {
     margin-bottom: 1em;
-  }
-
-  .fotoSobreMim {
-    width: 100%;
   }
 
   .skillsFoto {
