@@ -25,7 +25,7 @@ function AppRoutes() {
 
         <Route path="posts/:id/*" element={<Post escuro={tema} />} />
 
-        <Route path="*" element={<NaoEncontrada />} />
+        <Route path="*" element={<NaoEncontrada escuro={tema} />} />
       </Routes>
 
       <Footer />

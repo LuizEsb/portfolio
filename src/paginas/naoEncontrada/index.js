@@ -7,7 +7,7 @@ export default function NaoEncontrada({ escuro }) {
     const navegar = useNavigate()
   return (
     <>
-      <div className={styles.conteudoContainer}>
+      <div className={`${styles.conteudoContainer} ${escuro ? styles.escuroContainer : ""}`}>
         <span className={styles.texto404}>404</span>
 
         <h1 className={styles.titulo}>Ops! Página não encontrada.</h1>
@@ -31,7 +31,7 @@ export default function NaoEncontrada({ escuro }) {
           alt="imagem de erro cachorro"
         />
       </div>
-      <div className={styles.espacoEmBranco}></div>
+      <div className={`${styles.espacoEmBranco} ${escuro ? styles.escuro : ""}`}></div>
     </>
   );
 }
