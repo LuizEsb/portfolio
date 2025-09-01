@@ -44,3 +44,14 @@
         font-size: 1.375rem;
     }
 }
+
+@media (max-width: 744px) {
+    .post {
+        max-width: 80vw;
+        padding-bottom: 1rem;
+    }
+
+    .titulo {
+        font-size: 1.2rem;
+    }
+}

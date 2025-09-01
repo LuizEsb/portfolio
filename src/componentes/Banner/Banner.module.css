@@ -1,6 +1,6 @@
 .banner {
     padding: 3rem 7.5rem 6.25rem;
-    background-color: var(--azul-escuro);
+    background: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154580 96.76%);
     color: var(--branco);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -8,7 +8,7 @@
 
 .escuro {
     color: var(--branco-suave);
-    background-color: var(--cinza-azulado);
+    background: linear-gradient(174.61deg, var(--azul-escuro-fundo) 4.16%, var(--cinza-azulado) 48%, var(--azul-escuro-fundo) 96.76%);
 }
  
 .titulo {

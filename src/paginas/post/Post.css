@@ -69,17 +69,30 @@
     .post-markdown-container p {
         margin-bottom: 1.5rem;
     }
+
+    
+.post-markdown-container h2 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
 }
 
 @media (max-width: 744px) {
     .post-markdown-container h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         line-height: 2rem;
         margin-bottom: 1.5rem;
     }
 
     .post-markdown-container p {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
         line-height: 1.5rem;
     }
+
+    .post-markdown-container h2 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
 }
